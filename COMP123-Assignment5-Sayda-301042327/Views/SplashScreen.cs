@@ -7,7 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Name: Sayda Rahman
+ *   ID: 301042327
+ *   
+ * This program is about to purchase the computer from Dollar Computers store.
+ * Created on: August 22, 2019.
+ * Last modified on: August 09, 2019.
+ */
 namespace COMP123_Assignment5_Sayda_301042327.Views
 {
     public partial class SplashScreen : Form
