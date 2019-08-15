@@ -42,12 +42,12 @@
             this.ConditionLabel = new System.Windows.Forms.Label();
             this.TechSpecsGroupBox = new System.Windows.Forms.GroupBox();
             this.TechSpecs2TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.GPUTypeDataLabel = new System.Windows.Forms.Label();
             this.CPUNumberDataLabel = new System.Windows.Forms.Label();
             this.GPUTypeLabel = new System.Windows.Forms.Label();
             this.CPUBrandDataLabel = new System.Windows.Forms.Label();
             this.CPUBrandLabel = new System.Windows.Forms.Label();
             this.CPUNumberLabel = new System.Windows.Forms.Label();
+            this.GPUTypeDataLabel = new System.Windows.Forms.Label();
             this.TechSpecs1TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.HDDDataLabel = new System.Windows.Forms.Label();
             this.RAMSizeLabel = new System.Windows.Forms.Label();
@@ -95,6 +95,8 @@
             this.HeightLabel = new System.Windows.Forms.Label();
             this.WeightLabel = new System.Windows.Forms.Label();
             this.HeightButton = new System.Windows.Forms.Button();
+            this.ProductSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.Product_Table_LayoutPanel.SuspendLayout();
             this.TechSpecsGroupBox.SuspendLayout();
             this.TechSpecs2TableLayoutPanel.SuspendLayout();
@@ -284,21 +286,6 @@
             this.TechSpecs2TableLayoutPanel.Size = new System.Drawing.Size(760, 42);
             this.TechSpecs2TableLayoutPanel.TabIndex = 19;
             // 
-            // GPUTypeDataLabel
-            // 
-            this.GPUTypeDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GPUTypeDataLabel.BackColor = System.Drawing.Color.White;
-            this.GPUTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TechSpecs2TableLayoutPanel.SetColumnSpan(this.GPUTypeDataLabel, 2);
-            this.GPUTypeDataLabel.Location = new System.Drawing.Point(542, 0);
-            this.GPUTypeDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.GPUTypeDataLabel.Name = "GPUTypeDataLabel";
-            this.GPUTypeDataLabel.Size = new System.Drawing.Size(216, 42);
-            this.GPUTypeDataLabel.TabIndex = 6;
-            this.GPUTypeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // CPUNumberDataLabel
             // 
             this.CPUNumberDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -306,6 +293,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CPUNumberDataLabel.BackColor = System.Drawing.Color.White;
             this.CPUNumberDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CPUNumberDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUNumberDataLabel.Location = new System.Drawing.Point(326, 0);
             this.CPUNumberDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CPUNumberDataLabel.Name = "CPUNumberDataLabel";
@@ -334,6 +322,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CPUBrandDataLabel.BackColor = System.Drawing.Color.White;
             this.CPUBrandDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CPUBrandDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUBrandDataLabel.Location = new System.Drawing.Point(110, 0);
             this.CPUBrandDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CPUBrandDataLabel.Name = "CPUBrandDataLabel";
@@ -367,6 +356,22 @@
             this.CPUNumberLabel.Text = "CPU Number";
             this.CPUNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // GPUTypeDataLabel
+            // 
+            this.GPUTypeDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GPUTypeDataLabel.BackColor = System.Drawing.Color.White;
+            this.GPUTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TechSpecs2TableLayoutPanel.SetColumnSpan(this.GPUTypeDataLabel, 2);
+            this.GPUTypeDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GPUTypeDataLabel.Location = new System.Drawing.Point(542, 0);
+            this.GPUTypeDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GPUTypeDataLabel.Name = "GPUTypeDataLabel";
+            this.GPUTypeDataLabel.Size = new System.Drawing.Size(216, 42);
+            this.GPUTypeDataLabel.TabIndex = 6;
+            this.GPUTypeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // TechSpecs1TableLayoutPanel
             // 
             this.TechSpecs1TableLayoutPanel.ColumnCount = 7;
@@ -388,7 +393,7 @@
             this.TechSpecs1TableLayoutPanel.Name = "TechSpecs1TableLayoutPanel";
             this.TechSpecs1TableLayoutPanel.RowCount = 1;
             this.TechSpecs1TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TechSpecs1TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TechSpecs1TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.TechSpecs1TableLayoutPanel.Size = new System.Drawing.Size(760, 40);
             this.TechSpecs1TableLayoutPanel.TabIndex = 19;
             // 
@@ -400,6 +405,7 @@
             this.HDDDataLabel.BackColor = System.Drawing.Color.White;
             this.HDDDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TechSpecs1TableLayoutPanel.SetColumnSpan(this.HDDDataLabel, 2);
+            this.HDDDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HDDDataLabel.Location = new System.Drawing.Point(542, 0);
             this.HDDDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HDDDataLabel.Name = "HDDDataLabel";
@@ -456,6 +462,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RAMTypeDataLabel.BackColor = System.Drawing.Color.White;
             this.RAMTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RAMTypeDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RAMTypeDataLabel.Location = new System.Drawing.Point(326, 0);
             this.RAMTypeDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RAMTypeDataLabel.Name = "RAMTypeDataLabel";
@@ -470,6 +477,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RAMSizeDataLabel.BackColor = System.Drawing.Color.White;
             this.RAMSizeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RAMSizeDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RAMSizeDataLabel.Location = new System.Drawing.Point(110, 0);
             this.RAMSizeDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RAMSizeDataLabel.Name = "RAMSizeDataLabel";
@@ -509,6 +517,7 @@
             this.WebCamDataLabel.BackColor = System.Drawing.Color.White;
             this.WebCamDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TechSpecs3TableLayoutPanel.SetColumnSpan(this.WebCamDataLabel, 2);
+            this.WebCamDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WebCamDataLabel.Location = new System.Drawing.Point(542, 0);
             this.WebCamDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WebCamDataLabel.Name = "WebCamDataLabel";
@@ -537,6 +546,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CPUTypeDataLabel.BackColor = System.Drawing.Color.White;
             this.CPUTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CPUTypeDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUTypeDataLabel.Location = new System.Drawing.Point(110, 0);
             this.CPUTypeDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CPUTypeDataLabel.Name = "CPUTypeDataLabel";
@@ -551,6 +561,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CPUSpeedDataLabel.BackColor = System.Drawing.Color.White;
             this.CPUSpeedDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CPUSpeedDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUSpeedDataLabel.Location = new System.Drawing.Point(326, 0);
             this.CPUSpeedDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CPUSpeedDataLabel.Name = "CPUSpeedDataLabel";
@@ -638,7 +649,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -941,6 +952,10 @@
             this.HeightButton.TabIndex = 11;
             this.HeightButton.UseVisualStyleBackColor = false;
             // 
+            // ProductSaveFileDialog
+            // 
+            this.ProductSaveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.ProductSaveFileDialog_FileOk);
+            // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -1046,5 +1061,7 @@
         private System.Windows.Forms.Label HeightLabel;
         private System.Windows.Forms.Label WeightLabel;
         private System.Windows.Forms.Button HeightButton;
+        private System.Windows.Forms.SaveFileDialog ProductSaveFileDialog;
+        private System.Windows.Forms.OpenFileDialog ProductOpenFileDialog;
     }
 }

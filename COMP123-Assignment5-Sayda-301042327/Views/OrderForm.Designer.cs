@@ -584,7 +584,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Condition_Label.BackColor = System.Drawing.Color.White;
             this.Condition_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Condition_Label.Location = new System.Drawing.Point(114, 66);
+            this.Condition_Label.Location = new System.Drawing.Point(122, 66);
             this.Condition_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Condition_Label.Name = "Condition_Label";
             this.Condition_Label.Size = new System.Drawing.Size(104, 23);

@@ -21,6 +21,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
 {
     public partial class ProductInfoForm : Form
     {
+        //DataGridViewCellCollection cells;
         public ProductInfoForm()
         {
             InitializeComponent();
@@ -110,6 +111,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
             WebCamDataLabel.Text = Program.product.webcam;
 
             NextButton.Enabled = true;
+   
 
         }
 
@@ -147,5 +149,9 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
             this.Hide();
         }
 
+        private void ProductSaveFileDialog_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
