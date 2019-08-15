@@ -12,7 +12,7 @@ using System.Windows.Forms;
  *   ID: 301042327
  *   
  * This program is about to purchase the computer from Dollar Computers store.
- * Created on: August 22, 2019.
+ * Created on: July 22, 2019.
  * Last modified on: August 09, 2019.
  */
 namespace COMP123_Assignment5_Sayda_301042327.Views

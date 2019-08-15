@@ -952,10 +952,7 @@
             this.HeightButton.TabIndex = 11;
             this.HeightButton.UseVisualStyleBackColor = false;
             // 
-            // ProductSaveFileDialog
-            // 
-            this.ProductSaveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.ProductSaveFileDialog_FileOk);
-            // 
+            
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);

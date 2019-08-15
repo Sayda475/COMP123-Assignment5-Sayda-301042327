@@ -14,7 +14,7 @@ using System.Windows.Forms;
  * ID: 301042327
  *   
  * This program is about to purchase the computer from Dollar Computers store.
- * Created on: August 22, 2019.
+ * Created on: July 22, 2019.
  * Last modified on: August 14, 2019.
  */
 namespace COMP123_Assignment5_Sayda_301042327.Views
@@ -76,17 +76,20 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         /// <param name="e"></param>
         private void ProductDataGridView_SelectionChanged(object sender, EventArgs e)
         {
-            var _rowIndex = ProductDataGridView.CurrentCell.RowIndex;
-            var _currentRow = ProductDataGridView.Rows[_rowIndex];
-            var _columnCount = ProductDataGridView.ColumnCount;
+            if (ProductDataGridView.CurrentCell != null)
+            {
+                var _rowIndex = ProductDataGridView.CurrentCell.RowIndex;
+                var _currentRow = ProductDataGridView.Rows[_rowIndex];
+                var _columnCount = ProductDataGridView.ColumnCount;
 
 
-            var manufacturer = ProductDataGridView.CurrentRow.Cells[1].Value.ToString();
-            var model = ProductDataGridView.CurrentRow.Cells[2].Value.ToString();
-            var cost = ProductDataGridView.CurrentRow.Cells[3].Value.ToString();
+                var manufacturer = ProductDataGridView.CurrentRow.Cells[1].Value.ToString();
+                var model = ProductDataGridView.CurrentRow.Cells[2].Value.ToString();
+                var cost = ProductDataGridView.CurrentRow.Cells[3].Value.ToString();
 
-            string outpurString = manufacturer + " " + model + $" {cost:C2}";
-            SelectionTextBox.Text = outpurString;
+                string outpurString = manufacturer + " " + model + $" {cost:C2}";
+                SelectionTextBox.Text = outpurString;
+            }
 
             //This will enable the Next Button after select the row
             NextButton.Enabled = true;
