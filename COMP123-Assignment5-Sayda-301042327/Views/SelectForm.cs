@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
  * Name: Sayda Rahman
- *   ID: 301042327
+ * ID: 301042327
  *   
  * This program is about to purchase the computer from Dollar Computers store.
  * Created on: August 22, 2019.
@@ -26,9 +26,9 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
             InitializeComponent();
         }
 
-        public object SelectedProductTextBox { get; private set; }
-        public object ProductsDataGridView { get; private set; }
-        public object ProductFields { get; private set; }
+        //public object SelectedProductTextBox { get; private set; }
+        //public object ProductsDataGridView { get; private set; }
+        //public object ProductFields { get; private set; }
 
         /// <summary>
         /// This is event handler for the CancelButton click event
@@ -83,29 +83,19 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
             var _rowIndex = ProductDataGridView.CurrentCell.RowIndex;
             var _currentRow = ProductDataGridView.Rows[_rowIndex];
             var _cells = _currentRow.Cells;
+            var _columnCount = ProductDataGridView.ColumnCount;
+
+            // CurrentRow.Selected = true;
+            string outputString = string.Empty;
+
+            for(int index = 0; index < _columnCount; index++)
+            {
+                outputString = outputString + _cells[index].Value + "";
+            }
+
+            SelectionTextBox.Text = outputString;
+
             NextButton.Enabled = true;
-
-            Program.product.productID = short.Parse(_cells[Product.PRODUCT_ID].Value.ToString());
-            Program.product.cost = decimal.Parse(_cells[Product.COST].Value.ToString());
-            Program.product.manufacturer = _cells[Product.MANUFACTURER].Value.ToString();
-            Program.product.condition = _cells[Product.CONDITION].Value.ToString();
-            Program.product.platform = _cells[Product.PLATFORM].Value.ToString();
-            //Program.product.OS = _cells[index: (int)Product.OS].Value.ToString();
-            Program.product.model = _cells[Product.MODEL].Value.ToString();
-            Program.product.RAM_size = _cells[Product.RAM_SIZE].Value.ToString();
-            Program.product.screensize = _cells[Product.SCREEN_SIZE].Value.ToString();
-            Program.product.HDD_size = _cells[Product.HDD_SIZE].Value.ToString();
-            Program.product.CPU_brand = _cells[Product.CPU_BRAND].Value.ToString();
-            Program.product.CPU_number = _cells[Product.CPU_NUMBER].Value.ToString();
-            Program.product.GPU_Type = _cells[Product.GPU_TYPE].Value.ToString();
-            Program.product.CPU_type = _cells[Product.CPU_TYPE].Value.ToString();
-            Program.product.CPU_speed = _cells[Product.CPU_SPEED].Value.ToString();
-            Program.product.webcam = _cells[Product.WEBCAM].Value.ToString();
-
-
-            SelectionTextBox.Text = Program.product.manufacturer.ToString() + " " +
-                                         Program.product.model.ToString() + " " +
-                                         ((decimal)Program.product.cost).ToString("C");
 
         }
 

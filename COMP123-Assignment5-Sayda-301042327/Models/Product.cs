@@ -8,22 +8,23 @@ namespace COMP123_Assignment5_Sayda_301042327.Models
 
     public partial class Product
     {
-        public static int PRODUCT_ID { get; internal set; }
-        public static int COST { get; internal set; }
-        public static int MANUFACTURER { get; internal set; }
-        public static int CONDITION { get; internal set; }
-        public static int PLATFORM { get; internal set; }
-        public static int MODEL { get; internal set; }
-        public static int RAM_SIZE { get; internal set; }
-        public static int SCREEN_SIZE { get; internal set; }
-        public static int HDD_SIZE { get; internal set; }
-        public static int CPU_BRAND { get; internal set; }
-        public static int CPU_NUMBER { get; internal set; }
-        public static int GPU_TYPE { get; internal set; }
-        public static int CPU_TYPE { get; internal set; }
-        public static int CPU_SPEED { get; internal set; }
-        public static object Value { get; internal set; }
-        public static int WEBCAM { get; internal set; }
+        //public static int PRODUCT_ID { get; internal set; }
+        //public static int COST { get; internal set; }
+        //public static int MANUFACTURER { get; internal set; }
+        //public static int CONDITION { get; internal set; }
+        //public static int PLATFORM { get; internal set; }
+        //public static int MODEL { get; internal set; }
+        //public static int RAM_SIZE { get; internal set; }
+        //public static int SCREEN_SIZE { get; internal set; }
+        //public static int HDD_SIZE { get; internal set; }
+        //public static int CPU_BRAND { get; internal set; }
+        //public static int CPU_NUMBER { get; internal set; }
+        //public static int GPU_TYPE { get; internal set; }
+        //public static int CPU_TYPE { get; internal set; }
+        //public static int CPU_SPEED { get; internal set; }
+        //public static object Value { get; internal set; }
+        //public static int WEBCAM { get; internal set; }
+
         public short productID { get; set; }
 
         [Column(TypeName = "money")]

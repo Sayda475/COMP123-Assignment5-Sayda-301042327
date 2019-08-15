@@ -32,6 +32,7 @@
             this.OrderForm_MenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Exit_Tool_StripMenu_Item = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,7 +85,6 @@
             this.Model_Label = new System.Windows.Forms.Label();
             this.ModelLabel = new System.Windows.Forms.Label();
             this.Product_PictureBox = new System.Windows.Forms.PictureBox();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OrderForm_MenuStrip.SuspendLayout();
             this.YourPriceGroupBox.SuspendLayout();
             this.SystemComponentsGroupBox.SuspendLayout();
@@ -119,6 +119,15 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Text = "&Print";
             // 
             // toolStripSeparator2
             // 
@@ -278,10 +287,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TotalPrice_Label.BackColor = System.Drawing.Color.White;
             this.TotalPrice_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TotalPrice_Label.Location = new System.Drawing.Point(209, 145);
+            this.TotalPrice_Label.Location = new System.Drawing.Point(194, 145);
             this.TotalPrice_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalPrice_Label.Name = "TotalPrice_Label";
-            this.TotalPrice_Label.Size = new System.Drawing.Size(104, 31);
+            this.TotalPrice_Label.Size = new System.Drawing.Size(119, 37);
             this.TotalPrice_Label.TabIndex = 9;
             this.TotalPrice_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -426,7 +435,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LCDSize_Label.BackColor = System.Drawing.Color.White;
-            this.LCDSize_Label.Location = new System.Drawing.Point(0, 0);
+            this.LCDSize_Label.Location = new System.Drawing.Point(0, 1);
             this.LCDSize_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LCDSize_Label.Name = "LCDSize_Label";
             this.LCDSize_Label.Size = new System.Drawing.Size(316, 23);
@@ -720,15 +729,6 @@
             this.Product_PictureBox.Size = new System.Drawing.Size(312, 158);
             this.Product_PictureBox.TabIndex = 5;
             this.Product_PictureBox.TabStop = false;
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.printToolStripMenuItem.Text = "&Print";
             // 
             // OrderForm
             // 

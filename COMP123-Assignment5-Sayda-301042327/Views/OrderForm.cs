@@ -80,22 +80,6 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         /// <param name="e"></param>
         private void OrderForm_Activated(object sender, EventArgs e)
         {
-            Condition_Label.Text = Program.product.condition;
-            //PriceDataLabel.Text = ((decimal)Program.product.cost).ToString("C");
-            Plataform_Label.Text = Program.product.platform;
-            OSD_Label.Text = Program.product.OS;
-            Manufacturer_Label.Text = Program.product.manufacturer;
-            Model_Label.Text = Program.product.model;
-            Memory_Label.Text = Program.product.RAM_size;
-            LCDSize_Label.Text = Program.product.screensize;
-            HDD_Label.Text = Program.product.HDD_size;
-            CPUBrand_Label.Text = Program.product.CPU_brand;
-            CPUNumber_Label.Text = Program.product.CPU_number;
-            GPUType_Label.Text = Program.product.GPU_Type;
-            CPUType_Label.Text = Program.product.CPU_type;
-            CPUSpeed_Label.Text = Program.product.CPU_speed;
-            WebCam_Label.Text = Program.product.webcam;
-
             Price_Label.Text = "$" + Program.product.cost.ToString();
             SalesTax_Label.Text = "$" + (Program.product.cost * 13 / 100).ToString();
             TotalPrice_Label.Text = "$" + (Program.product.cost * 113 / 100).ToString();

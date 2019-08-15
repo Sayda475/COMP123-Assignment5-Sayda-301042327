@@ -37,8 +37,8 @@ namespace COMP123_Assignment5_Sayda_301042327
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
             aboutForm = new AboutForm();
-
             product = new Product();
+
 
             Application.Run(splashScreen);
         }

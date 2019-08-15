@@ -13,7 +13,7 @@ using System.Windows.Forms;
  *   
  * This program is about to purchase the computer from Dollar Computers store.
  * Created on: August 22, 2019.
- * Last modified on: August 09, 2019.
+ * Last modified on: August 14, 2019.
  */
 namespace COMP123_Assignment5_Sayda_301042327.Views
 {
@@ -40,7 +40,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         /// <param name="e"></param>
         private void ExistButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         /// <summary>
         /// This is the event handler for the SavedOrderButton click event
