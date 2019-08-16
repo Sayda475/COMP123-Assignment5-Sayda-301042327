@@ -13,7 +13,7 @@ using System.Windows.Forms;
  *   
  * This program is about to purchase the computer from Dollar Computers store.
  * Created on: July 22, 2019.
- * Last modified on: August 09, 2019.
+ * Last modified on: August 15, 2019.
  */
 namespace COMP123_Assignment5_Sayda_301042327.Views
 {
@@ -65,7 +65,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
             Application.Exit();
         }
         /// <summary>
-        /// This is the event handler for the  Exit_Tool_StripMenu_Item exit event
+        /// This is the share event handler for the  Exit_Tool_StripMenu_Item exit event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -80,24 +80,23 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         /// <param name="e"></param>
         private void OrderForm_Activated(object sender, EventArgs e)
         {
+            // System Component Group Box 
             Manufacturer_Label.Text = Program.product.manufacturer;
             Plataform_Label.Text = Program.product.platform;
             Condition_Label.Text = Program.product.condition;
-            PriceDataLabel.Text = ((decimal)Program.product.cost).ToString("C");
-           
-            OSDataLabel.Text = Program.product.OS;
-            
-            ModelDataLabel.Text = Program.product.model;
-            MemoryDataLabel.Text = Program.product.RAM_size;
-            LCDSizeDataLabel.Text = Program.product.screensize;
-            HDDDataLabel.Text = Program.product.HDD_size;
-            CPUBrandDataLabel.Text = Program.product.CPU_brand;
-            CPUNumberDataLabel.Text = Program.product.CPU_number;
-            GPUTypeDataLabel.Text = Program.product.GPU_Type;
-            CPUTypeDataLabel.Text = Program.product.CPU_type;
-            CPUSpeedDataLabel.Text = Program.product.CPU_speed;
-            WebCamDataLabel.Text = Program.product.webcam;
+            Model_Label.Text = Program.product.model;
 
+            LCDSize_Label.Text = Program.product.screensize;
+            Memory_Label.Text = Program.product.RAM_size;
+            CPUBrand_Label.Text = Program.product.CPU_brand;
+            CPUType_Label.Text = Program.product.CPU_type;
+            CPUNumber_Label.Text = Program.product.CPU_number;
+            CPUSpeed_Label.Text = Program.product.CPU_speed;
+            HDD_Label.Text = Program.product.HDD_size;
+            GPUType_Label.Text = Program.product.GPU_Type;
+            WebCamLabel.Text = Program.product.webcam;
+            OS_Label.Text = Program.product.OS;
+                     
             // This the calculation for total price
             Price_Label.Text = "$" + Program.product.cost.ToString();
             SalesTax_Label.Text = "$" + (Program.product.cost * 13 / 100).ToString();
@@ -113,7 +112,46 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         {
             Program.aboutForm.ShowDialog();
         }
+        /// <summary>
+        /// This is the share event handler for the backToolStripMenuItem click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
+        /// <summary>
+        /// This is the event handler for the PrintToolStripMenuItem  click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your form was sent to the printer", "Printing...",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
-        
+        /// <summary>
+        /// This is the event handler for the Back_Button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Back_Button_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
+
+        /// <summary>
+        /// This is event handler for the Cancel_Button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Cancel_Button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

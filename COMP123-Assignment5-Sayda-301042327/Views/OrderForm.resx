@@ -137,12 +137,21 @@
 </value>
   </data>
   <metadata name="TotalLineShape.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>-3, 97, 315, 0</value>
+    <value>3, 113, 323, 0</value>
   </metadata>
   <metadata name="TotalLineShape.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>-3, 97</value>
+    <value>3, 113</value>
   </metadata>
   <metadata name="TotalLineShape.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>315, 0</value>
+    <value>323, 0</value>
+  </metadata>
+  <metadata name="TotalLineShape.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>3, 113, 323, 0</value>
+  </metadata>
+  <metadata name="TotalLineShape.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>3, 113</value>
+  </metadata>
+  <metadata name="TotalLineShape.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>323, 0</value>
   </metadata>
 </root>

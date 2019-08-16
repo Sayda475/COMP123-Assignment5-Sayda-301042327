@@ -119,9 +119,9 @@
             // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(434, 581);
+            this.ClearButton.Location = new System.Drawing.Point(411, 605);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(118, 44);
+            this.ClearButton.Size = new System.Drawing.Size(151, 44);
             this.ClearButton.TabIndex = 2;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
@@ -129,9 +129,9 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(663, 581);
+            this.NextButton.Location = new System.Drawing.Point(657, 605);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(122, 44);
+            this.NextButton.Size = new System.Drawing.Size(146, 44);
             this.NextButton.TabIndex = 3;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
@@ -139,7 +139,7 @@
             // 
             // SelectAnotherOneButton
             // 
-            this.SelectAnotherOneButton.Location = new System.Drawing.Point(92, 581);
+            this.SelectAnotherOneButton.Location = new System.Drawing.Point(68, 605);
             this.SelectAnotherOneButton.Name = "SelectAnotherOneButton";
             this.SelectAnotherOneButton.Size = new System.Drawing.Size(247, 44);
             this.SelectAnotherOneButton.TabIndex = 4;
@@ -253,7 +253,7 @@
             this.TechSpecsGroupBox.Controls.Add(this.TechSpecs1TableLayoutPanel);
             this.TechSpecsGroupBox.Controls.Add(this.TechSpecs3TableLayoutPanel);
             this.TechSpecsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TechSpecsGroupBox.Location = new System.Drawing.Point(23, 377);
+            this.TechSpecsGroupBox.Location = new System.Drawing.Point(26, 386);
             this.TechSpecsGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.TechSpecsGroupBox.Name = "TechSpecsGroupBox";
             this.TechSpecsGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -957,7 +957,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(884, 637);
+            this.ClientSize = new System.Drawing.Size(884, 661);
             this.ControlBox = false;
             this.Controls.Add(this.ProductInfoGroupBox);
             this.Controls.Add(this.TechSpecsGroupBox);

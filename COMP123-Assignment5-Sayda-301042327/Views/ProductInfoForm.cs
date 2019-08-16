@@ -55,6 +55,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
             Program.selectForm.Show();
             this.Hide();
         }
+
         /// <summary>
         /// This is the event handler for the ProductInfoForm closing event
         /// </summary>
@@ -87,7 +88,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
                 ConditionDataLabel.Text = Program.product.condition;
                 CostDataLabel.Text = "$" + Program.product.cost.ToString();
 
-                //Product info group box
+                //Product info group box 
                 PlatformButton.Text = Program.product.platform;
                 OSButton.Text = Program.product.OS;
                 ManufacturerButton.Text = Program.product.manufacturer;
@@ -101,7 +102,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
                 LANButton.Text = Program.product.LAN;
                 WIFIButton.Text = Program.product.WIFI;
 
-                // Tech spaces group box
+                // Tech spaces group box 
                 RAMSizeDataLabel.Text = Program.product.RAM_size;
                 RAMTypeDataLabel.Text = Program.product.RAM_type;
                 HDDDataLabel.Text = Program.product.HDD_size;
@@ -119,7 +120,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         }
 
         /// <summary>
-        /// This is the event handler for the  exitToolStripMenuItem exit event
+        /// This is the share event handler for the  exitToolStripMenuItem exit event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

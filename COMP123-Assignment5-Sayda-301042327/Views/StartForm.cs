@@ -51,6 +51,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         {
             Program.productInfoForm.Show();
             this.Hide();
+            //productInfoForm.OpenFileDialog();
         }
         /// <summary>
         ///  This is the event handler for the StarForm closing event
