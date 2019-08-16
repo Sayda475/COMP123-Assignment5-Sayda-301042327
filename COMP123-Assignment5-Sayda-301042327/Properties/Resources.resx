@@ -118,22 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dollarComputer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dollarComputer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer_money1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computer_money1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kissclipart-dollar-sign-logo-png-clipart-computer-icons-united-e9df6613f1eced7b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kissclipart-dollar-sign-logo-png-clipart-computer-icons-united-e9df6613f1eced7b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="surface-go-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\surface-go-2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dollar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kissclipart-dollar-sign-logo-png-clipart-computer-icons-united-e9df6613f1eced7b" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kissclipart-dollar-sign-logo-png-clipart-computer-icons-united-e9df6613f1eced7b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dollarComputer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dollarComputer1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="computer_money1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computer_money1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="surface-go-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\surface-go-21.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="computer_money" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\computer_money.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="surface-go-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\surface-go-21.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

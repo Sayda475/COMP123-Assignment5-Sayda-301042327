@@ -30,6 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ProductDataGridView = new System.Windows.Forms.DataGridView();
+            this.SelectFormLabel = new System.Windows.Forms.Label();
+            this.HardwareLabel = new System.Windows.Forms.Label();
+            this.SelectionTextBox = new System.Windows.Forms.TextBox();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,11 +67,6 @@
             this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.webcamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.SelectFormLabel = new System.Windows.Forms.Label();
-            this.HardwareLabel = new System.Windows.Forms.Label();
-            this.SelectionTextBox = new System.Windows.Forms.TextBox();
-            this.CancelButton = new System.Windows.Forms.Button();
-            this.NextButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -121,6 +121,55 @@
             this.ProductDataGridView.Size = new System.Drawing.Size(749, 334);
             this.ProductDataGridView.TabIndex = 0;
             this.ProductDataGridView.SelectionChanged += new System.EventHandler(this.ProductDataGridView_SelectionChanged);
+            // 
+            // SelectFormLabel
+            // 
+            this.SelectFormLabel.AutoSize = true;
+            this.SelectFormLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectFormLabel.Location = new System.Drawing.Point(101, 18);
+            this.SelectFormLabel.Name = "SelectFormLabel";
+            this.SelectFormLabel.Size = new System.Drawing.Size(567, 31);
+            this.SelectFormLabel.TabIndex = 1;
+            this.SelectFormLabel.Text = "Welcome to DollarComputer Hardware List";
+            // 
+            // HardwareLabel
+            // 
+            this.HardwareLabel.AutoSize = true;
+            this.HardwareLabel.Location = new System.Drawing.Point(70, 435);
+            this.HardwareLabel.Name = "HardwareLabel";
+            this.HardwareLabel.Size = new System.Drawing.Size(107, 25);
+            this.HardwareLabel.TabIndex = 2;
+            this.HardwareLabel.Text = "You Select";
+            // 
+            // SelectionTextBox
+            // 
+            this.SelectionTextBox.Location = new System.Drawing.Point(201, 430);
+            this.SelectionTextBox.Name = "SelectionTextBox";
+            this.SelectionTextBox.ReadOnly = true;
+            this.SelectionTextBox.Size = new System.Drawing.Size(560, 30);
+            this.SelectionTextBox.TabIndex = 3;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.BackColor = System.Drawing.Color.Coral;
+            this.CancelButton.Location = new System.Drawing.Point(245, 481);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(114, 40);
+            this.CancelButton.TabIndex = 4;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = false;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // NextButton
+            // 
+            this.NextButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.NextButton.Location = new System.Drawing.Point(428, 481);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(114, 40);
+            this.NextButton.TabIndex = 5;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = false;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -404,55 +453,6 @@
             // productBindingSource
             // 
             this.productBindingSource.DataSource = typeof(COMP123_Assignment5_Sayda_301042327.Models.Product);
-            // 
-            // SelectFormLabel
-            // 
-            this.SelectFormLabel.AutoSize = true;
-            this.SelectFormLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectFormLabel.Location = new System.Drawing.Point(196, 19);
-            this.SelectFormLabel.Name = "SelectFormLabel";
-            this.SelectFormLabel.Size = new System.Drawing.Size(420, 25);
-            this.SelectFormLabel.TabIndex = 1;
-            this.SelectFormLabel.Text = "Welcome to DollarComputer Hardware List";
-            // 
-            // HardwareLabel
-            // 
-            this.HardwareLabel.AutoSize = true;
-            this.HardwareLabel.Location = new System.Drawing.Point(70, 435);
-            this.HardwareLabel.Name = "HardwareLabel";
-            this.HardwareLabel.Size = new System.Drawing.Size(107, 25);
-            this.HardwareLabel.TabIndex = 2;
-            this.HardwareLabel.Text = "You Select";
-            // 
-            // SelectionTextBox
-            // 
-            this.SelectionTextBox.Location = new System.Drawing.Point(201, 430);
-            this.SelectionTextBox.Name = "SelectionTextBox";
-            this.SelectionTextBox.ReadOnly = true;
-            this.SelectionTextBox.Size = new System.Drawing.Size(560, 30);
-            this.SelectionTextBox.TabIndex = 3;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.BackColor = System.Drawing.Color.Coral;
-            this.CancelButton.Location = new System.Drawing.Point(245, 481);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(114, 40);
-            this.CancelButton.TabIndex = 4;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = false;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // NextButton
-            // 
-            this.NextButton.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.NextButton.Location = new System.Drawing.Point(428, 481);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(114, 40);
-            this.NextButton.TabIndex = 5;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = false;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // SelectForm
             // 

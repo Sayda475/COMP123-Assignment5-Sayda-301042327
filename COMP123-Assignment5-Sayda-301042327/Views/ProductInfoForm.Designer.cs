@@ -64,9 +64,7 @@
             this.CPUTypeLabel = new System.Windows.Forms.Label();
             this.ProductInfoMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAnotherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,6 +95,8 @@
             this.HeightButton = new System.Windows.Forms.Button();
             this.ProductSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Product_Table_LayoutPanel.SuspendLayout();
             this.TechSpecsGroupBox.SuspendLayout();
             this.TechSpecs2TableLayoutPanel.SuspendLayout();
@@ -119,7 +119,7 @@
             // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(409, 559);
+            this.ClearButton.Location = new System.Drawing.Point(434, 581);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(118, 44);
             this.ClearButton.TabIndex = 2;
@@ -129,7 +129,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(653, 559);
+            this.NextButton.Location = new System.Drawing.Point(663, 581);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(122, 44);
             this.NextButton.TabIndex = 3;
@@ -139,7 +139,7 @@
             // 
             // SelectAnotherOneButton
             // 
-            this.SelectAnotherOneButton.Location = new System.Drawing.Point(92, 569);
+            this.SelectAnotherOneButton.Location = new System.Drawing.Point(92, 581);
             this.SelectAnotherOneButton.Name = "SelectAnotherOneButton";
             this.SelectAnotherOneButton.Size = new System.Drawing.Size(247, 44);
             this.SelectAnotherOneButton.TabIndex = 4;
@@ -184,7 +184,7 @@
             this.CostDataLabel.Name = "CostDataLabel";
             this.CostDataLabel.Size = new System.Drawing.Size(128, 40);
             this.CostDataLabel.TabIndex = 6;
-            this.CostDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CostDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CostLabel
             // 
@@ -220,7 +220,7 @@
             this.ConditionDataLabel.Name = "ConditionDataLabel";
             this.ConditionDataLabel.Size = new System.Drawing.Size(128, 40);
             this.ConditionDataLabel.TabIndex = 6;
-            this.ConditionDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ConditionDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProductIDDataLabel
             // 
@@ -234,7 +234,7 @@
             this.ProductIDDataLabel.Name = "ProductIDDataLabel";
             this.ProductIDDataLabel.Size = new System.Drawing.Size(128, 40);
             this.ProductIDDataLabel.TabIndex = 6;
-            this.ProductIDDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ProductIDDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ConditionLabel
             // 
@@ -619,35 +619,15 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.openToolStripMenuItem.Text = "&Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
-            // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ClearButton_Click);
             // 
@@ -704,7 +684,7 @@
             // 
             this.WIFIButton.BackColor = System.Drawing.Color.White;
             this.WIFIButton.Enabled = false;
-            this.WIFIButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.WIFIButton.Font = new System.Drawing.Font("Arial", 12F);
             this.WIFIButton.Location = new System.Drawing.Point(665, 183);
             this.WIFIButton.Name = "WIFIButton";
             this.WIFIButton.Size = new System.Drawing.Size(117, 39);
@@ -725,7 +705,7 @@
             // 
             this.LANButton.BackColor = System.Drawing.Color.White;
             this.LANButton.Enabled = false;
-            this.LANButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.LANButton.Font = new System.Drawing.Font("Arial", 12F);
             this.LANButton.Location = new System.Drawing.Point(398, 192);
             this.LANButton.Name = "LANButton";
             this.LANButton.Size = new System.Drawing.Size(133, 39);
@@ -746,7 +726,7 @@
             // 
             this.PowerButton.BackColor = System.Drawing.Color.White;
             this.PowerButton.Enabled = false;
-            this.PowerButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.PowerButton.Font = new System.Drawing.Font("Arial", 12F);
             this.PowerButton.Location = new System.Drawing.Point(665, 130);
             this.PowerButton.Name = "PowerButton";
             this.PowerButton.Size = new System.Drawing.Size(117, 39);
@@ -767,7 +747,7 @@
             // 
             this.WebcamButton.BackColor = System.Drawing.Color.White;
             this.WebcamButton.Enabled = false;
-            this.WebcamButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.WebcamButton.Font = new System.Drawing.Font("Arial", 12F);
             this.WebcamButton.Location = new System.Drawing.Point(134, 193);
             this.WebcamButton.Name = "WebcamButton";
             this.WebcamButton.Size = new System.Drawing.Size(133, 39);
@@ -778,7 +758,7 @@
             // 
             this.DepthButton.BackColor = System.Drawing.Color.White;
             this.DepthButton.Enabled = false;
-            this.DepthButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.DepthButton.Font = new System.Drawing.Font("Arial", 12F);
             this.DepthButton.Location = new System.Drawing.Point(398, 144);
             this.DepthButton.Name = "DepthButton";
             this.DepthButton.Size = new System.Drawing.Size(133, 39);
@@ -809,7 +789,7 @@
             // 
             this.ModelButton.BackColor = System.Drawing.Color.White;
             this.ModelButton.Enabled = false;
-            this.ModelButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.ModelButton.Font = new System.Drawing.Font("Arial", 12F);
             this.ModelButton.Location = new System.Drawing.Point(134, 89);
             this.ModelButton.Name = "ModelButton";
             this.ModelButton.Size = new System.Drawing.Size(133, 39);
@@ -830,7 +810,7 @@
             // 
             this.ManufacturerButton.BackColor = System.Drawing.Color.White;
             this.ManufacturerButton.Enabled = false;
-            this.ManufacturerButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.ManufacturerButton.Font = new System.Drawing.Font("Arial", 12F);
             this.ManufacturerButton.Location = new System.Drawing.Point(665, 34);
             this.ManufacturerButton.Name = "ManufacturerButton";
             this.ManufacturerButton.Size = new System.Drawing.Size(117, 39);
@@ -851,7 +831,7 @@
             // 
             this.OSButton.BackColor = System.Drawing.Color.White;
             this.OSButton.Enabled = false;
-            this.OSButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.OSButton.Font = new System.Drawing.Font("Arial", 12F);
             this.OSButton.Location = new System.Drawing.Point(398, 34);
             this.OSButton.Name = "OSButton";
             this.OSButton.Size = new System.Drawing.Size(133, 39);
@@ -872,7 +852,7 @@
             // 
             this.PlatformButton.BackColor = System.Drawing.Color.White;
             this.PlatformButton.Enabled = false;
-            this.PlatformButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.PlatformButton.Font = new System.Drawing.Font("Arial", 12F);
             this.PlatformButton.Location = new System.Drawing.Point(134, 34);
             this.PlatformButton.Name = "PlatformButton";
             this.PlatformButton.Size = new System.Drawing.Size(133, 39);
@@ -903,7 +883,7 @@
             // 
             this.WidthButton.BackColor = System.Drawing.Color.White;
             this.WidthButton.Enabled = false;
-            this.WidthButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.WidthButton.Font = new System.Drawing.Font("Arial", 12F);
             this.WidthButton.Location = new System.Drawing.Point(398, 85);
             this.WidthButton.Name = "WidthButton";
             this.WidthButton.Size = new System.Drawing.Size(133, 39);
@@ -914,7 +894,7 @@
             // 
             this.WeightButton.BackColor = System.Drawing.Color.White;
             this.WeightButton.Enabled = false;
-            this.WeightButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.WeightButton.Font = new System.Drawing.Font("Arial", 12F);
             this.WeightButton.Location = new System.Drawing.Point(134, 137);
             this.WeightButton.Name = "WeightButton";
             this.WeightButton.Size = new System.Drawing.Size(133, 39);
@@ -945,14 +925,33 @@
             // 
             this.HeightButton.BackColor = System.Drawing.Color.White;
             this.HeightButton.Enabled = false;
-            this.HeightButton.Font = new System.Drawing.Font("Arial", 16F);
+            this.HeightButton.Font = new System.Drawing.Font("Arial", 12F);
             this.HeightButton.Location = new System.Drawing.Point(665, 79);
             this.HeightButton.Name = "HeightButton";
             this.HeightButton.Size = new System.Drawing.Size(117, 39);
             this.HeightButton.TabIndex = 11;
             this.HeightButton.UseVisualStyleBackColor = false;
             // 
-            
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);

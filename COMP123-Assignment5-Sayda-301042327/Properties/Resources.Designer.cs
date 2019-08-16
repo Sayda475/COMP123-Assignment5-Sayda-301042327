@@ -93,9 +93,39 @@ namespace COMP123_Assignment5_Sayda_301042327.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dollarComputer {
+            get {
+                object obj = ResourceManager.GetObject("dollarComputer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollarComputer1 {
+            get {
+                object obj = ResourceManager.GetObject("dollarComputer1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kissclipart_dollar_sign_logo_png_clipart_computer_icons_united_e9df6613f1eced7b {
             get {
                 object obj = ResourceManager.GetObject("kissclipart-dollar-sign-logo-png-clipart-computer-icons-united-e9df6613f1eced7b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money {
+            get {
+                object obj = ResourceManager.GetObject("money", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

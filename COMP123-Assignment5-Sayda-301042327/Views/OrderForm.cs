@@ -71,7 +71,7 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         /// <param name="e"></param>
         private void Exit_Tool_StripMenu_Item_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         /// <summary>
         /// This is the event handler for the OrderForm activated event
@@ -80,6 +80,25 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
         /// <param name="e"></param>
         private void OrderForm_Activated(object sender, EventArgs e)
         {
+            Manufacturer_Label.Text = Program.product.manufacturer;
+            Plataform_Label.Text = Program.product.platform;
+            Condition_Label.Text = Program.product.condition;
+            PriceDataLabel.Text = ((decimal)Program.product.cost).ToString("C");
+           
+            OSDataLabel.Text = Program.product.OS;
+            
+            ModelDataLabel.Text = Program.product.model;
+            MemoryDataLabel.Text = Program.product.RAM_size;
+            LCDSizeDataLabel.Text = Program.product.screensize;
+            HDDDataLabel.Text = Program.product.HDD_size;
+            CPUBrandDataLabel.Text = Program.product.CPU_brand;
+            CPUNumberDataLabel.Text = Program.product.CPU_number;
+            GPUTypeDataLabel.Text = Program.product.GPU_Type;
+            CPUTypeDataLabel.Text = Program.product.CPU_type;
+            CPUSpeedDataLabel.Text = Program.product.CPU_speed;
+            WebCamDataLabel.Text = Program.product.webcam;
+
+            // This the calculation for total price
             Price_Label.Text = "$" + Program.product.cost.ToString();
             SalesTax_Label.Text = "$" + (Program.product.cost * 13 / 100).ToString();
             TotalPrice_Label.Text = "$" + (Program.product.cost * 113 / 100).ToString();

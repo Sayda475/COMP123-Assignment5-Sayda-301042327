@@ -248,10 +248,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Price_Label.BackColor = System.Drawing.Color.White;
             this.Price_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Price_Label.Location = new System.Drawing.Point(209, 37);
+            this.Price_Label.Location = new System.Drawing.Point(171, 37);
             this.Price_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Price_Label.Name = "Price_Label";
-            this.Price_Label.Size = new System.Drawing.Size(104, 31);
+            this.Price_Label.Size = new System.Drawing.Size(142, 31);
             this.Price_Label.TabIndex = 9;
             this.Price_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -262,10 +262,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SalesTax_Label.BackColor = System.Drawing.Color.White;
             this.SalesTax_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SalesTax_Label.Location = new System.Drawing.Point(209, 73);
+            this.SalesTax_Label.Location = new System.Drawing.Point(171, 73);
             this.SalesTax_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SalesTax_Label.Name = "SalesTax_Label";
-            this.SalesTax_Label.Size = new System.Drawing.Size(104, 35);
+            this.SalesTax_Label.Size = new System.Drawing.Size(142, 35);
             this.SalesTax_Label.TabIndex = 9;
             this.SalesTax_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -287,10 +287,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TotalPrice_Label.BackColor = System.Drawing.Color.White;
             this.TotalPrice_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TotalPrice_Label.Location = new System.Drawing.Point(194, 145);
+            this.TotalPrice_Label.Location = new System.Drawing.Point(171, 145);
             this.TotalPrice_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalPrice_Label.Name = "TotalPrice_Label";
-            this.TotalPrice_Label.Size = new System.Drawing.Size(119, 37);
+            this.TotalPrice_Label.Size = new System.Drawing.Size(142, 37);
             this.TotalPrice_Label.TabIndex = 9;
             this.TotalPrice_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 

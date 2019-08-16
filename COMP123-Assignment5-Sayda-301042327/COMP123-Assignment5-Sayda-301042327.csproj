@@ -158,5 +158,14 @@
   <ItemGroup>
     <None Include="Resources\surface-go-21.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollarComputer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollarComputer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

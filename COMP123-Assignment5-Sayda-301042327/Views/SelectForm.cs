@@ -83,9 +83,9 @@ namespace COMP123_Assignment5_Sayda_301042327.Views
                 var _columnCount = ProductDataGridView.ColumnCount;
 
 
-                var manufacturer = ProductDataGridView.CurrentRow.Cells[1].Value.ToString();
-                var model = ProductDataGridView.CurrentRow.Cells[2].Value.ToString();
-                var cost = ProductDataGridView.CurrentRow.Cells[3].Value.ToString();
+                var manufacturer = ProductDataGridView.CurrentRow.Cells[2].Value.ToString();
+                var model = ProductDataGridView.CurrentRow.Cells[3].Value.ToString();
+                var cost = ProductDataGridView.CurrentRow.Cells[1].Value.ToString();
 
                 string outpurString = manufacturer + " " + model + $" {cost:C2}";
                 SelectionTextBox.Text = outpurString;
